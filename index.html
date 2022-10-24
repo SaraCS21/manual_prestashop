@@ -18,11 +18,82 @@
 
     <title>Manual Prestashop</title>
 </head>
-<body class="w-100 d-flex justify-content-end">
+<body class="w-100 d-flex flex-column flex-sm-row justify-content-sm-end align-items-center">
     
     <!-- Navegador -->
+    <nav class="d-sm-none navbar navbar-expand-lg bg-light w-100 fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <div class="d-flex align-items-center justify-content-around">
+                <img src="./svg/prestashop.svg" class="img_mobile me-3">
+                <span class="span_mobile" style="color: #281143;">Presta<span class="span_mobile" style="color: #df1668;">Shop</span></span>
+            </div>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    ¿Qué es Prestashop?
+                </a>
+                <ul class="dropdown-menu border-light bg-light ps-4">
+                  <li><a href="#definition" class="text-decoration-none text-dark">Definición</a></li>
+                  <li><a href="#recomendable" class="text-decoration-none text-dark">¿Cuándo es recomendable usarlo?</a></li>
+                  <li><a href="#beneficios" class="text-decoration-none text-dark">Beneficios</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Requisitos
+                </a>
+                <ul class="dropdown-menu border-light bg-light ps-4">
+                  <li><a href="#requisitos" class="text-decoration-none text-dark">Requisitos Generales</a></li>
+                  <li><a href="#php7.4" class="text-decoration-none text-dark">Instalación de PHP 7.4</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Instalación
+                </a>
+                <ul class="dropdown-menu border-light bg-light ps-4">
+                    <li>
+                        <a href="#download" class="text-decoration-none text-dark">Descarga</a>
+                    </li>
+                    <li>
+                        <a href="#apache" class="text-decoration-none text-dark">Instalación en Apache</a>
+                    </li>
+                    <li>
+                        <a href="#web" class="text-decoration-none text-dark">Instalación Web</a>
+                    </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Configuración de Nuestra Tienda
+                </a>
+                <ul class="dropdown-menu border-light bg-light ps-4">
+                    <li>
+                        <a href="#crear_producto" class="text-decoration-none text-dark">Crear un Producto</a>
+                    </li>
+                    <li>
+                        <a href="#logo" class="text-decoration-none text-dark">Logotipo e imágenes Corporativas</a>
+                    </li>
+                    <li>
+                        <a href="#nueva_pagina" class="text-decoration-none text-dark">Añadir Nueva Página</a>
+                    </li>
+                    <li>
+                        <a href="#nuevo_tema" class="text-decoration-none text-dark">Cambiar el Tema de la Tienda</a>
+                    </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 
-    <div class="navegador flex-shrink-0 p-3 bg-light vh-100 fixed-top">
+    <div class="d-none d-sm-block navegador flex-shrink-0 p-3 bg-light vh-100 fixed-top">
         <div class="d-flex align-items-center justify-content-around pb-3 mb-3 border-bottom">
             <img src="./svg/prestashop.svg" class="w-25">
             <span class="titulo" style="color: #281143;">Presta<span style="color: #df1668;">Shop</span></span>
@@ -123,8 +194,9 @@
     </div>
 
     <!-- Contenido -->
-    <main class="p-5">
-        <h1>¿Qué es PrestaShop?</h1>
+    <main class="p-sm-5 pt-5">
+        <h1 class="d-none d-sm-block">¿Qué es PrestaShop?</h1>
+        <h1 class="d-sm-none mt-5">¿Qué es PrestaShop?</h1>
         <h2 id="definition" class="pt-4 pb-3">Definición</h2>
         <p>PrestaShop es un Sistema de Gestión de Contenidos (CMS) gratuito para desarrollar tiendas online.</p>
         <p>Su crecimiento se apoya en su comunidad, que han creado una gran cantidad de módulos para agregar nuevas funcionalidades y plantillas para definir el aspecto visual de la tienda.</p>
@@ -143,7 +215,8 @@
         <h2 id="recomendable" class="pt-4 pb-3">¿Cuándo es recomendable usarlo?</h2>
         <p>Según datos de la propia PrestaShop, cuentan con más de 300.000 tiendas online en todo el mundo de las cuales unas 60.000 son españolas.</p>
         <div class="d-flex justify-content-center">
-            <img class="w-75" src="./img/grafico.png" alt="grafico">
+            <img class="d-none d-sm-block w-75" src="./img/grafico.png" alt="grafico">
+            <img class="d-sm-none w-100" src="./img/grafico.png" alt="grafico">
         </div>
         <p>Como podemos ver, el mercado en España se encuentra repartido prácticamente entre WooCommerce y PrestaShop, aunque a nivel internacional la cosa cambia bastante, quedando relegado PrestaShop a un 4º lugar.</p>
         <p>Con PrestaShop se puede afrontar cualquier proyecto de tienda online, aunque está más enfocado para cubrir tiendas online de tamaño mediano-alto o con opción multitienda. Por lo tanto, podríamos concluir que el mercado ideal con PrestaShop serían tiendas online de tamaño mediano-alto ubicadas en España.</p>
@@ -171,7 +244,7 @@
         <h2 id="php7.4" class="pt-4 pb-3">Instalación de Php 7.4</h2>
         <p>La actual versión de Prestashop requiere que tengamos PHP 7.4, sin embargo el PHP por defecto se instala en su última versión, por lo que debemos instalar esta versión también.</p>
         <p>Lo primero será añadir un repositorio de paquetes de Ubuntu adicional, para ello ejecutamos los siguientes comandos:</p>
-        <pre class="w-50 bg-light rounded-3">
+        <pre class="w-100 d-block d-sm-none bg-light rounded-3">
 
     <span class="opacidad">1</span>     <span class="text-danger">apt install</span> software-properties-common gnupg2 <span class="text-danger">-y</span>
     <span class="opacidad">2</span>
@@ -182,66 +255,137 @@
     <span class="opacidad">7</span>     <span class="text-danger">apt install</span> libapache2-mod-php7.4 libapache2-mod-php
     <span class="opacidad">8</span>     <span class="text-danger">apt update</span>
     </pre>
+    <pre class="w-50 d-none d-sm-block bg-light rounded-3">
+
+        <span class="opacidad">1</span>     <span class="text-danger">apt install</span> software-properties-common gnupg2 <span class="text-danger">-y</span>
+        <span class="opacidad">2</span>
+        <span class="opacidad">3</span>     <span class="text-secondary"># Repositorio con las versiones de PHP</span> 
+        <span class="opacidad">4</span>     <span class="text-danger">add-apt-repository</span> ppa:ondrej/php
+        <span class="opacidad">5</span>
+        <span class="opacidad">6</span>     <span class="text-secondary"># Instalamos el modulo apache de PHP 7.4</span> 
+        <span class="opacidad">7</span>     <span class="text-danger">apt install</span> libapache2-mod-php7.4 libapache2-mod-php
+        <span class="opacidad">8</span>     <span class="text-danger">apt update</span>
+        </pre>
+
         <p>Instalamos PHP 7.4</p>
-        <pre class="w-50 bg-light rounded-3">
+        <pre class="d-sm-none d-block w-100 bg-light rounded-3">
+
+    <span class="opacidad">1</span>    <span class="text-danger">apt-get install</span> php7.4 php7.4-fpm php7.4-cli <span class="text-danger">-y</span>
+        </pre>
+
+        <pre class="d-sm-block d-none w-50 bg-light rounded-3">
 
     <span class="opacidad">1</span>     <span class="text-danger">apt-get install</span> php7.4 php7.4-fpm php7.4-cli <span class="text-danger">-y</span>
         </pre>
+
         <p>Lo único que nos falta es cambiar la versión de PHP que ejecutará Ubuntu:</p>
-        <pre class="w-50 bg-light rounded-3">
+        <pre class="d-none d-sm-block w-50 bg-light rounded-3">
 
     <span class="opacidad">1</span>     <span class="text-danger">a2dismod</span> php8.1
     <span class="opacidad">2</span>     <span class="text-danger">a2enmod</span> php7.4
         </pre>
+
+        <pre class="d-block d-sm-none w-100 bg-light rounded-3">
+
+    <span class="opacidad">1</span>     <span class="text-danger">a2dismod</span> php8.1
+    <span class="opacidad">2</span>     <span class="text-danger">a2enmod</span> php7.4
+        </pre>
+
         <p>Cada vez que ejecutemos uno de estos comandos, será necesario realizar un restart de apache.</p>
         <p>Si queremos ver la versión de php, y cambiarla (no la de Apache), podemos usar el siguiente comando:</p>
-        <pre class="w-50 bg-light rounded-3">
+
+        <pre class="d-sm-none w-100 bg-light rounded-3">
+
+    <span class="opacidad">1</span>     <span class="text-danger">update-alternatives --config</span> php
+                </pre>
+        <pre class="d-none d-sm-block w-50 bg-light rounded-3">
 
     <span class="opacidad">1</span>     <span class="text-danger">update-alternatives --config</span> php
         </pre>
+
         <div class="d-flex justify-content-center mt-4 mb-5 w-100">
-            <img class="w-50" src="./img/php_versiones.png" alt="php_versiones">
+            <img class="d-none d-sm-block w-50" src="./img/php_versiones.png" alt="php_versiones">
+            <img class="d-sm-none w-100" src="./img/php_versiones.png" alt="php_versiones">
         </div>
 
         <h1>Instalación</h1>
         <h2 id="download" class="pt-4 pb-3">Descarga</h2>
         <p>Vamos a descargar PrestaShop para Ubuntu 20.04 LTS desde la página oficial de la aplicación, donde visitaremos la sección «Crear mi tienda» para obtener el paquete:</p>
         <div class="d-flex justify-content-center mt-4 mb-5 w-100">
-            <img class="w-75" src="./img/descarga.png" alt="descarga">
+            <img class="d-sm-block d-none w-75" src="./img/descarga.png" alt="descarga">
+            <img class="d-sm-none w-100" src="./img/descarga.png" alt="descarga">
         </div>
         <p>Será necesario crear una cuenta, aceptar la política de protección de datos y las condiciones generales de uso para que se inicie la descarga.</p>
         <p>Aunque de forma alternativa también podemos hacernos con el paquete de instalación usando un comando:</p>
-        <pre class="w-50 bg-light rounded-3">
+
+        <pre class="d-block d-sm-none w-100 bg-light rounded-3">
+
+    <span class="opacidad">1</span>     <span class="text-danger">wget</span> https://download.prestashop.com/download/releases/prestashop_1.7.8.7.zip
+        </pre>
+
+        <pre class="d-none d-sm-block w-50 bg-light rounded-3">
 
     <span class="opacidad">1</span>     <span class="text-danger">wget</span> https://download.prestashop.com/download/releases/prestashop_1.7.8.7.zip
         </pre>
 
         <h2 id="apache" class="pt-4 pb-3">Instalación en Apache</h2>
         <p>Lo primero que haremos será descomprimir el paquete de instalación en donde queramos, aunque es recomendable tener los ficheros de PrestaShop en <span class="fst-italic">/var/www</span>.</p>
-        <pre class="w-50 bg-light rounded-3">
+        
+        <pre class="d-block d-sm-none w-100 bg-light rounded-3">
 
     <span class="opacidad">1</span>     <span class="text-danger">unzip</span> prestashop_1.7.8.7.zip <span class="text-danger">-d</span> /var/www/prestashop
         </pre>
+
+        <pre class="d-none d-sm-block w-50 bg-light rounded-3">
+
+    <span class="opacidad">1</span>     <span class="text-danger">unzip</span> prestashop_1.7.8.7.zip <span class="text-danger">-d</span> /var/www/prestashop
+        </pre>
+        
         <p>Una vez lo tenemos descomprimido, cambiamos el propietario de dicha carpeta a el usuario que use dicho servicio web:</p>
-        <pre class="w-50 bg-light rounded-3">
+        <pre class="d-block d-sm-none w-100 bg-light rounded-3">
+
+    <span class="opacidad">1</span>     <span class="text-danger">chown -R</span> www-data: /var/www/prestashop/
+        </pre> 
+
+        <pre class="d-none d-sm-block w-50 bg-light rounded-3">
 
     <span class="opacidad">1</span>     <span class="text-danger">chown -R</span> www-data: /var/www/prestashop/
         </pre>     
         <p>Tendremos que configurar el servicio web para hacer accesible PrestaShop. Puedes integrar PrestaShop en el servicio web de Ubuntu 20.04 LTS de múltiples formas, ya sea como el sitio web por defecto, un servidor virtual independiente o, como haremos en este tutorial, como parte del sitio web por defecto.</p>
         <ol>
             <li>Activaremos el módulo Rewrite de Apache
-                <pre class="w-50 bg-light rounded-3 mt-3">
+                <pre class="d-block d-sm-none w-100 bg-light rounded-3 mt-3">
+
+    <span class="opacidad">1</span>     <span class="text-danger">a2enmod</span> rewrite
+                </pre> 
+
+                <pre class="d-none d-sm-block w-50 bg-light rounded-3 mt-3">
 
     <span class="opacidad">1</span>     <span class="text-danger">a2enmod</span> rewrite
                 </pre> 
             </li>
             <li>Creamos una configuración de apache para PrestaShop
-                <pre class="w-50 bg-light rounded-3 mt-3">
+                <pre class="d-block d-sm-none w-100 bg-light rounded-3 mt-3">
+
+    <span class="opacidad">1</span>     <span class="text-danger">nano</span> /etc/apache2/sites-available/prestashop.conf
+                </pre> 
+
+                <pre class="d-none d-sm-block w-50 bg-light rounded-3 mt-3">
 
     <span class="opacidad">1</span>     <span class="text-danger">nano</span> /etc/apache2/sites-available/prestashop.conf
                 </pre> 
                 <p>La configuración consistirá básicamente en establecer un alias, que en este caso será “<span class="fst-italic">/tienda</span>”, y en permitir mediante una directiva AllowOverride el uso de archivos .htaccess</p>
-                <pre class="w-50 bg-light rounded-3 mt-3">
+                <pre class="d-block d-sm-none w-100 bg-light rounded-3 mt-3">
+
+    <span class="opacidad">1</span>     Alias /tienda /var/www/prestashop
+    <span class="opacidad">2</span>     
+    <span class="opacidad">3</span>     &ltDirectory /var/www/prestashop&gt
+    <span class="opacidad">4</span>         AllowOverride all
+    <span class="opacidad">5</span>         php_value memory_limit 512M
+    <span class="opacidad">6</span>     &lt/Directory&gt
+                </pre> 
+                
+                <pre class="d-none d-sm-block w-50 bg-light rounded-3 mt-3">
 
     <span class="opacidad">1</span>     Alias /tienda /var/www/prestashop
     <span class="opacidad">2</span>     
@@ -252,7 +396,12 @@
                 </pre> 
             </li>
             <li>Guardamos el archivo, habilitamos el sitio y restablecemos Apache
-                <pre class="w-50 bg-light rounded-3 mt-3">
+                <pre class="d-block d-sm-none w-100 bg-light rounded-3 mt-3">
+
+    <span class="opacidad">1</span>     <span class="text-danger">a2ensite</span> prestashop.conf
+    <span class="opacidad">2</span>     <span class="text-danger">systemctl</span> restart apache2
+                </pre>
+                <pre class="d-none d-sm-block w-50 bg-light rounded-3 mt-3">
 
     <span class="opacidad">1</span>     <span class="text-danger">a2ensite</span> prestashop.conf
     <span class="opacidad">2</span>     
@@ -260,7 +409,13 @@
                 </pre> 
             </li>
             <li>Añadimos la nueva redireccion en el fichero hosts de el directorio /etc
-                <pre class="w-50 bg-light rounded-3 mt-3">
+                <pre class="d-block d-sm-none w-100 bg-light rounded-3 mt-3">
+    <span class="opacidad">1</span>     <span class="text-secondary">...</span>
+    <span class="opacidad">2</span>     
+    <span class="opacidad">3</span>     127.0.0.1    /tienda
+                </pre>
+
+                <pre class="d-none d-sm-block w-50 bg-light rounded-3 mt-3">
 
     <span class="opacidad">1</span>     <span class="text-secondary">...</span>
     <span class="opacidad">2</span>     
@@ -269,37 +424,76 @@
             </li>
         </ol>
         <p>Lo siguiente que debemos hacer es instalar las extensiones de PHP, en este caso especificando la versión, que en nuestro caso es 7.4.</p>
-        <pre class="w-50 bg-light rounded-3 mt-3">
+        
+        <pre class="d-block d-sm-none w-100 bg-light rounded-3 mt-3">
+
+    <span class="opacidad">1</span>     <span class="text-danger">apt install</span> php7.4 php7.4-cli php7.4-common php7.4-curl php7.4-gd php7.4-intl php7.4-json php7.4-mbstring php7.4-mysql php7.4-soap php7.4-xml php7.4-zip
+        </pre>
+
+        <pre class="d-none d-sm-block w-50 bg-light rounded-3 mt-3">
 
     <span class="opacidad">1</span>     <span class="text-danger">apt install -y</span> php7.4-curl php7.4-gd php7.4-intl php7.4-mbstring php7.4-xml php7.4-zip php7.4-pdo-mysql    
         </pre> 
         <p>Estas son las básicas, pero es recomendable instalar algunas más:</p>
-        <pre class="w-50 bg-light rounded-3 mt-3">
+
+        <pre class="d-block d-sm-none w-100 bg-light rounded-3 mt-3">
+
+    <span class="opacidad">1</span>     <span class="text-danger">apt install -y</span> php7.4-apcu php7.4-memcached php7.4-memcache    
+        </pre>            
+        <pre class="d-none d-sm-block w-50 bg-light rounded-3 mt-3">
 
     <span class="opacidad">1</span>     <span class="text-danger">apt install -y</span> php7.4-apcu php7.4-memcached php7.4-memcache    
         </pre> 
+
+
         <p>Solo nos queda configurar la base de datos para finalizar la instalación en el servidor. Lo primero es entrar en la linea de terminal de mysql:</p>
-        <pre class="w-50 bg-light rounded-3 mt-3">
+        
+        <pre class="d-block d-sm-none w-100 bg-light rounded-3 mt-3">
+
+    <span class="opacidad">1</span>     <span class="text-danger">mysql -u</span> usuario <span class="text-danger">-p</span>
+        </pre>
+        
+        <pre class="d-none d-sm-block w-50 bg-light rounded-3 mt-3">
 
     <span class="opacidad">1</span>     <span class="text-danger">mysql -u</span> usuario <span class="text-danger">-p</span>  
         </pre>
         <p>Una vez dentro creamos la base de datos.</p>
-        <pre class="w-50 bg-light rounded-3 mt-3">
+
+        <pre class="d-block d-sm-none w-100 bg-light rounded-3 mt-3">
+
+    <span class="opacidad">1</span>     <span class="text-danger">CREATE DATABASE</span> presta_db <span class="text-danger">charset utf8mb4 collate utf8mb4_unicode_ci</span>;
+        </pre>
+        <pre class="d-none d-sm-block w-50 bg-light rounded-3 mt-3">
 
     <span class="opacidad">1</span>     <span class="text-danger">CREATE DATABASE</span> presta_db <span class="text-danger">charset utf8mb4 collate utf8mb4_unicode_ci</span>;
         </pre>
         <p>Seguidamente crearemos el usuario que interactue con dicha base de datos.</p>
-        <pre class="w-50 bg-light rounded-3 mt-3">
 
-    <span class="opacidad">1</span>     <span class="text-danger">CREATE DATABASE</span> presta_user@localhost <span class="text-danger">IDENTIFIED BY</span> '<span class="text-primary">password</span>';
+        <pre class="d-block d-sm-none w-100 bg-light rounded-3 mt-3">
+
+    <span class="opacidad">1</span>     <span class="text-danger">CREATE USER</span> presta_user@localhost <span class="text-danger">IDENTIFIED BY</span> 'password';
+        </pre>
+        <pre class="d-none d-sm-block w-50 bg-light rounded-3 mt-3">
+
+    <span class="opacidad">1</span>     <span class="text-danger">CREATE USER</span> presta_user@localhost <span class="text-danger">IDENTIFIED BY</span> '<span class="text-primary">password</span>';
         </pre>
         <p>Esto cambiará un poco si tenemos MySQL 8:</p>
-        <pre class="w-50 bg-light rounded-3 mt-3">
 
-    <span class="opacidad">1</span>     <span class="text-danger">CREATE DATABASE</span> presta_user@localhost <span class="text-danger">IDENTIFIED WITH mysql_native_password BY</span> '<span class="text-primary">password</span>';
+        <pre class="d-block d-sm-none w-100 bg-light rounded-3 mt-3">
+
+    <span class="opacidad">1</span>     <span class="text-danger">CREATE USER</span> presta_user@localhost <span class="text-danger">IDENTIFIED WITH</span> mysql_native_password <span class="text-danger">BY</span> 'password';
+        </pre>
+        <pre class="d-none d-sm-block w-50 bg-light rounded-3 mt-3">
+
+    <span class="opacidad">1</span>     <span class="text-danger">CREATE USER</span> presta_user@localhost <span class="text-danger">IDENTIFIED WITH mysql_native_password BY</span> '<span class="text-primary">password</span>';
         </pre>
         <p>Por último, le damos permisos en la base de datos al usuario creado.</p>
-        <pre class="w-50 bg-light rounded-3 mt-3">
+
+        <pre class="d-block d-sm-none w-100 bg-light rounded-3 mt-3">
+
+    <span class="opacidad">1</span>     <span class="text-danger">GRANT ALL PRIVILEGES ON</span> presta_db.* <span class="text-danger">TO</span> presta_user@localhost;
+        </pre>
+        <pre class="d-none d-sm-block w-50 bg-light rounded-3 mt-3">
 
     <span class="opacidad">1</span>     <span class="text-danger">GRANT ALL PRIVILEGES ON</span> presta_db.* <span class="text-danger">TO</span> presta_user@localhost;
         </pre>
@@ -312,13 +506,15 @@
             <li>
                 <p>Selección del Idioma</p>
                 <div class="d-flex justify-content-center mt-4 mb-5 w-100">
-                    <img class="pasos" src="./img/seleccion_idioma.png" alt="seleccion_idioma">
+                    <img class="d-block d-sm-none w-100" src="./img/seleccion_idioma.png" alt="seleccion_idioma">
+                    <img class="d-none d-sm-block pasos" src="./img/seleccion_idioma.png" alt="seleccion_idioma">
                 </div>
             </li>
             <li>
                 <p>Aceptar los términos de instalación</p>
                 <div class="d-flex justify-content-center mt-4 mb-5 w-100">
-                    <img class="pasos" src="./img/aceptar_terminos.png" alt="aceptar_terminos">
+                    <img class="d-block d-sm-none w-100" src="./img/aceptar_terminos.png" alt="aceptar_terminos">
+                    <img class="d-none d-sm-block pasos" src="./img/aceptar_terminos.png" alt="aceptar_terminos">
                 </div>
             </li>
             <li>
@@ -327,30 +523,39 @@
             <li>
                 <p>Introducir información básica sobre la tienda y los datos del usuario administrador. También podrás elegir si quieres instalar o no datos de demostración para la nueva tienda, en nuestro caso asi lo haremos para partir con una tienda ya construida.</p>
                 <div class="d-flex justify-content-center mt-4 mb-5 w-100">
-                    <img class="pasos" src="./img/info_tienda.png" alt="info_tienda">
+                    <img class="d-block d-sm-none w-100" src="./img/info_tienda.png" alt="info_tienda">
+                    <img class="d-none d-sm-block pasos" src="./img/info_tienda.png" alt="info_tienda">
                 </div>
             </li>
             <li>
                 <p>Continuamos con la configuración de la conexión a la base de datos, podemos darle al botón de comprobar conexión para asegurarnos que todo va bien.</p>
                 <div class="d-flex justify-content-center mt-4 mb-5 w-100">
-                    <img class="pasos" src="./img/config_conexion.png" alt="config_conexion">
+                    <img class="d-block d-sm-none w-100" src="./img/config_conexion.png" alt="configuracion_conexion">
+                    <img class="d-none d-sm-block pasos" src="./img/config_conexion.png" alt="configuracion_conexion">
                 </div>
             </li>
             <li>
                 <p>Una vez hecho todo esto, comenzará el proceso de instalación</p>
                 <div class="d-flex justify-content-center mt-4 mb-5 w-100">
-                    <img class="pasos" src="./img/proceso_instalacion.png" alt="proceso_instalacion">
+                    <img class="d-block d-sm-none w-100" src="./img/proceso_instalacion.png" alt="proceso_instalacion">
+                    <img class="d-none d-sm-block pasos" src="./img/proceso_instalacion.png" alt="proceso_instalacion">
                 </div>
             </li>
             <li>
                 <p>Cuando haya acabado nos saldra lo siguiente:</p>
                 <div class="d-flex justify-content-center mt-4 mb-5 w-100">
-                    <img class="pasos" src="./img/fin_instalacion.png" alt="fin_instalacion">
+                    <img class="d-block d-sm-none w-100" src="./img/fin_instalacion.png" alt="fin_instalación">
+                    <img class="d-none d-sm-block pasos" src="./img/fin_instalacion.png" alt="fin_instalación">
                 </div>
             </li>
             <li>
                 <p>Un aviso nos informará de que debemos eliminar la carpeta de instalación, cosa que podemos hacer desde consola:</p>
-                <pre class="w-50 bg-light rounded-3 mt-3">
+                
+                <pre class="d-block d-sm-none w-100 bg-light rounded-3 mt-3">
+
+    <span class="opacidad">1</span>     <span class="text-danger">rm -rf</span> /var/www/html/tienda/install
+                </pre>
+                <pre class="d-none d-sm-block w-50 bg-light rounded-3 mt-3">
 
     <span class="opacidad">1</span>     <span class="text-danger">rm -rf</span> /var/www/prestashop/install/
                 </pre> 
@@ -358,25 +563,29 @@
         </ol>
         <p>Una vez hemos acabado, podemos visitar de nuevo <span class="fst-italic">http://localhost/tienda</span>, y nos aparecerá nuestro PrestaShop en funcionamiento.</p>
         <div class="d-flex justify-content-center mt-4 mb-5 w-100">
-            <img class="w-75" src="./img/prestashop_defecto.png" alt="prestashop_defecto">
+            <img class="d-block d-sm-none w-100" src="./img/prestashop_defecto.png" alt="prestashop">
+            <img class="d-none d-sm-block pasos" src="./img/prestashop_defecto.png" alt="prestashop">
         </div>
         <h4 class="pb-3">Acceso al panel de Administración</h4>
         <p>Si queremos acceder al panel de administrador debemos ir a la url: <span class="fst-italic">http://localhost/tienda/admin</span>, y escribir las credenciales en el formulario. Observa que el acceso al panel de administración cambia de una dirección terminada en <span class="fst-italic">/admin/</span> a una terminación tipo <span class="fst-italic">/adminXXXXXXXXX/</span>, para que un usuario malicioso no pueda encontrar el acceso al panel de administración</p>
         <p>Debemos guardar dicha url en un marcador, o donde queramos, para volver a acceder a dicho panel ya que no podremos volver a entrar desde <span class="fst-italic">/tienda/admin</span>.</p>
         <h6 class="fst-italic pb-3">Login Panel de Administración</h6>
         <div class="d-flex justify-content-center mt-4 mb-5 w-100">
-            <img class="w-75" src="./img/login_admin.png" alt="login_admin">
+            <img class="d-block d-sm-none w-100" src="./img/login_admin.png" alt="login_admin">
+            <img class="d-none d-sm-block pasos" src="./img/login_admin.png" alt="login_admin">
         </div>
         <h6 class="fst-italic pb-3">Panel de Administración</h6>
         <div class="d-flex justify-content-center mt-4 mb-5 w-100">
-            <img class="w-75" src="./img/panel_admin.png" alt="panel_admin">
+            <img class="d-block d-sm-none w-100" src="./img/panel_admin.png" alt="admin">
+            <img class="d-none d-sm-block pasos" src="./img/panel_admin.png" alt="admin">
         </div>
 
         <h1>Configuración de Nuestra Tienda</h1>
         <h2 id="crear_producto" class="pt-4 pb-3">Crear un Producto</h2>
         <p>Si le damos a empezar en el menú de la anterior pantalla, nos hará un breve tutorial, empezando por la creación de un producto.</p>
         <div class="d-flex justify-content-center mt-4 mb-5 w-100">
-            <img class="w-75" src="./img/crear_producto.png" alt="crear_producto">
+            <img class="d-block d-sm-none w-100" src="./img/crear_producto.png" alt="crear_producto">
+            <img class="d-none d-sm-block pasos" src="./img/crear_producto.png" alt="crear_producto">
         </div>
         <p>Siguiendo el tutorial nos aparece la pestaña de creación de productos. En ella podemos agregar:</p>
         <ul>
@@ -393,27 +602,32 @@
             <li class="pb-1">Etc.</li>
         </ul>
         <div class="d-flex justify-content-center mt-4 mb-5 w-100">
-            <img class="w-75" src="./img/productos.png" alt="productos">
+            <img class="d-block d-sm-none w-100" src="./img/productos.png" alt="productos">
+            <img class="d-none d-sm-block pasos" src="./img/productos.png" alt="productos">
         </div>
         <p>Debemos habilitar el producto recién creado para que aparezca en nuestra tienda.</p>
         <div class="d-flex justify-content-center mt-4 mb-5 w-100">
-            <img class="w-75" src="./img/habilitar_producto.png" alt="habilitar_producto">
+            <img class="d-block d-sm-none w-100" src="./img/habilitar_producto.png" alt="habilitar_producto">
+            <img class="d-none d-sm-block pasos" src="./img/habilitar_producto.png" alt="habilitar_producto">
         </div>
         <h6 class="fst-italic pb-3">Producto ya en la tienda</h6>
         <div class="d-flex justify-content-center mt-4 mb-5 w-100">
-            <img class="w-75" src="./img/producto_en_tienda.png" alt="producto_en_tienda">
+            <img class="d-block d-sm-none w-100" src="./img/producto_en_tienda.png" alt="producto_tienda">
+            <img class="d-none d-sm-block pasos" src="./img/producto_en_tienda.png" alt="producto_tienda">
         </div>
 
         <h2 id="logo" class="pt-4 pb-3">Logotipo e imágenes Corporativas</h2>
         <p>En la siguiente sección podemos cambiar el logotipo de la tienda, el logotipo del correo y el favicon de la página.</p>
         <div class="d-flex justify-content-center mt-4 mb-5 w-100">
-            <img class="w-75" src="./img/logo.png" alt="logo">
+            <img class="d-block d-sm-none w-100" src="./img/logo.png" alt="logo">
+            <img class="d-none d-sm-block pasos" src="./img/logo.png" alt="logo">
         </div>
 
         <h2 id="nueva_pagina" class="pt-4 pb-3">Añadir Nueva Página</h2>
         <p>Para añadir una nueva página iremos a la pestaña Diseño, y clicaremos en la opción páginas. Esto nos mostrará lo siguiente:</p>
         <div class="d-flex justify-content-center mt-4 mb-5 w-100">
-            <img class="w-75" src="./img/nueva_pagina.png" alt="nueva_pagina">
+            <img class="d-block d-sm-none w-100" src="./img/nueva_pagina.png" alt="nueva_pagina">
+            <img class="d-none d-sm-block pasos" src="./img/nueva_pagina.png" alt="nueva_pagina">
         </div>
         <p>Aquí tenemos dos opciones, podemos crear una nueva categoría de página o crear una página nueva, le daremos a añadir nueva página.</p>
         <p>Aquí nos salen diferentes opciones a configurar:</p>
@@ -425,21 +639,25 @@
             <li class="pb-1">Etc.</li>
         </ul>
         <div class="d-flex justify-content-center mt-4 mb-5 w-100">
-            <img class="w-75" src="./img/config1.png" alt="config1">
+            <img class="d-block d-sm-none w-100" src="./img/config1.png" alt="config1">
+            <img class="d-none d-sm-block pasos" src="./img/config1.png" alt="config1">
         </div>
         <div class="d-flex justify-content-center mt-4 mb-5 w-100">
-            <img class="w-75" src="./img/config2.png" alt="config2">
+            <img class="d-block d-sm-none w-100" src="./img/config2.png" alt="config2">
+            <img class="d-none d-sm-block pasos" src="./img/config2.png" alt="config2">
         </div>
         <p>En la zona inferior nos aparece un botón de previsualización, por si queremos ver como queda el resultado final.</p>
         <div class="d-flex justify-content-center mt-4 mb-5 w-100">
-            <img class="w-75" src="./img/previsualizar.png" alt="previsualizar">
+            <img class="d-block d-sm-none w-100" src="./img/previsualizar.png" alt="previsualizar">
+            <img class="d-none d-sm-block pasos" src="./img/previsualizar.png" alt="previsualizar">
         </div>
 
         <h2 id="nuevo_tema" class="pt-4 pb-3">Cambiar el Tema de la Tienda</h2>
         <p>Para añadir un tema podemos utilizar el gestor de Prestashop o agregar un tema descargado de internet. En este caso utilizaremos uno de internet gratuito (es importante saber que muchos de estos temas gratuitos te piden suscribirte, poner una tarjeta de crédito, compartirlo en redes sociales, etc).</p>
         <p>Para añadir un tema descargado debemos clicar en <span class="fst-italic">diseño/Tema</span> y Logotipo. Dentro de dicha pestaña pulsaremos en añadir nuevo tema.</p>
         <div class="d-flex justify-content-center mt-4 mb-5 w-100">
-            <img class="w-75" src="./img/nuevo_tema.png" alt="nuevo_tema">
+            <img class="d-block d-sm-none w-100" src="./img/nuevo_tema.png" alt="nuevo_tema">
+            <img class="d-none d-sm-block pasos" src="./img/nuevo_tema.png" alt="nuevo_tema">
         </div>
         <p>Tenemos diferentes opciones para subir un tema:</p>
         <ul>
@@ -450,7 +668,15 @@
         <p>Cabe resaltar que el fichero a subir debe ser un zip. Posiblemente el Zip que descarguemos tenga mas ficheros dentro, y necesitemos buscar entre esos ficheros el zip de instalación.</p>
         <p>Es importante saber que puede darnos un fallo a la hora de subir el tema, ya que por defecto php soporta únicamente 2M de subida. Para cambiar eso debemos modificar el archivo php.ini de la versión PHP 7.4, que se encuentra en el directorio <span class="fst-italic">/etc/php/7.4/apache2</span>.</p>
         <p>Lo que debemos cambiar es lo siguiente:</p>
-        <pre class="w-50 bg-light rounded-3 mt-3">
+
+        <pre class="d-block d-sm-none w-100 bg-light rounded-3 mt-3">
+
+    <span class="opacidad">1</span>     upload_max_filesize <span class="text-secondary">tamaño (2M por defecto)</span> 
+    <span class="opacidad">2</span>     
+    <span class="opacidad">3</span>     post_max_size <span class="text-secondary">tamaño</span> 
+        </pre>
+        
+        <pre class="d-none d-sm-block w-50 bg-light rounded-3 mt-3">
 
     <span class="opacidad">1</span>     upload_max_filesize <span class="text-secondary">tamaño (2M por defecto)</span> 
     <span class="opacidad">2</span>     
@@ -459,32 +685,39 @@
         <p>Una vez instalado nos saldrá como tema a seleccionar pero, dependiendo del tema, puede que nos de algún fallo ya que algunos requieren de módulos adicionales:</p>
         <h6 class="fst-italic pb-3">Ejemplo de fallo</h6>
         <div class="d-flex justify-content-center mt-4 mb-5 w-100">
-            <img class="w-75" src="./img/fallo_modulos.png" alt="fallo_modulos">
+            <img class="d-block d-sm-none w-100" src="./img/fallo_modulos.png" alt="fallo_modulos">
+            <img class="d-none d-sm-block pasos" src="./img/fallo_modulos.png" alt="fallo_modulos">
         </div>
         <p>Si esto ocurre podemos descargar los módulos correspondientes desde sus repositorios de github.</p>
         <div class="d-flex justify-content-center mt-4 mb-5 w-100">
-            <img class="w-75" src="./img/modulos_repositorios.png" alt="modulos_repositorios">
+            <img class="d-block d-sm-none w-100" src="./img/modulos_repositorios.png" alt="modulos_repositorios">
+            <img class="d-none d-sm-block pasos" src="./img/modulos_repositorios.png" alt="modulos_repositorios">
         </div>
         <p>En la siguiente sección podemos descargar el módulo, en formato zip o tar.gz, nostros recomendamos usar el formato zip, es más sencillo de instalar.</p>
         <div class="d-flex justify-content-center mt-4 mb-5 w-100">
-            <img class="w-75" src="./img/descargar_modulo.png" alt="descargar_modulo">
+            <img class="d-block d-sm-none w-100" src="./img/descargar_modulo.png" alt="descargar_modulo">
+            <img class="d-none d-sm-block pasos" src="./img/descargar_modulo.png" alt="descargar_modulo">
         </div>
         <p>Una vez descargado el módulo debemos comprobar que la carpeta dentro del zip sólo contenga el nombre del módulo, y que no venga con carácteres de más, porque nos fallará si este es el caso.</p>
         <h6 class="fst-italic pb-3">Carpeta con el nombre erróneo</h6>
         <div class="d-flex justify-content-center mt-4 mb-5 w-100">
-            <img class="w-50" src="./img/nombre_erroneo.png" alt="nombre_erroneo">
+            <img class="d-block d-sm-none w-100" src="./img/nombre_erroneo.png" alt="nombre_erroneo">
+            <img class="d-none d-sm-block pasos" src="./img/nombre_erroneo.png" alt="nombre_erroneo">
         </div>
         <h6 class="fst-italic pb-3">Carpeta con el nombre correcto</h6>
         <div class="d-flex justify-content-center mt-4 mb-5 w-100">
-            <img class="w-50" src="./img/nombre_correcto.png" alt="nombre_correcto">
+            <img class="d-block d-sm-none w-100" src="./img/nombre_correcto.png" alt="nombre_correcto">
+            <img class="d-none d-sm-block pasos" src="./img/nombre_correcto.png" alt="nombre_correcto">
         </div>
         <p>Si todo ha ido el módulo se instalará de forma correcta. Una vez tengamos todos los módulos necesarios ya tendremos el tema seleccionado.</p>
         <div class="d-flex justify-content-center mt-4 mb-5 w-100">
-            <img class="w-75" src="./img/tema_seleccionado.png" alt="tema_seleccionado">
+            <img class="d-block d-sm-none w-100" src="./img/tema_seleccionado.png" alt="tema_seleccionado">
+            <img class="d-none d-sm-block pasos" src="./img/tema_seleccionado.png" alt="tema_seleccionado">
         </div>
         <h6 class="fst-italic pb-3">Página con el tema cambiado</h6>
         <div class="d-flex justify-content-center mt-4 mb-5 w-100">
-            <img class="w-75" src="./img/tema_cambiado.png" alt="tema_cambiado">
+            <img class="d-block d-sm-none w-100" src="./img/tema_cambiado.png" alt="tema_cambiado">
+            <img class="d-none d-sm-block pasos" src="./img/tema_cambiado.png" alt="tema_cambiado">
         </div>
 
     </main>
