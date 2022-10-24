@@ -4,6 +4,22 @@
     box-sizing: border-box;
 }
 
+/* BARRA DE SCROLL */
+
+body::-webkit-scrollbar{
+    width: 12px;              
+}
+
+body::-webkit-scrollbar-track{
+    background: #f8f9fa;        
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #281143;    
+    border-radius: 50px;       
+    border: 3px solid #f8f9fa; 
+}
+
 p{
     margin: 10px;
 }
